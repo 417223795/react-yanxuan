@@ -7,7 +7,7 @@ class Login extends Component {
       <div className="wrap">
         <header>
           <i className="iconfont icon-shouye1 header-icon"
-             onClick={() => {this.props.history.replace('/mian')}}
+             onClick={() => {this.props.history.replace('/main')}}
           ></i>
           网易严选
           <i className="iconfont icon-gouwuche header-icon"></i>

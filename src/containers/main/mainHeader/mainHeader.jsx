@@ -39,15 +39,16 @@ class MainHeader extends Component {
     // 发送消息
     PubSub.publish('setIndex', (this.state.liIndex))
   }
-  componentWillUnmount(){
+/*  componentWillUnmount(){
 
-  }
+  }*/
 
   /*clickItem (index) {
     this.setState({liIndex:index})
   }*/
 
   render () {
+    const path = this.props.location.pathname
     console.log(this.state.header);
     return (
       <div className="header-wrap">
@@ -61,7 +62,7 @@ class MainHeader extends Component {
 
         <div className='tab-shop-wrap'>
           <ul className="tab-shop" >
-            <li className='tab-item'
+            <li className={`tab-item ${path==='/main'?'on':''}`}
                 onClick={()=>{this.props.history.replace('/main')}}
 
             >推荐</li>
@@ -69,7 +70,7 @@ class MainHeader extends Component {
               this.state.header? (
                 this.state.header.map((item, index) => {
                   return (
-                    <li className='tab-item'
+                    <li className={`tab-item ${path===`/list:${index}`?'on':''}`}
                         key={index}
                         onClick={
                           (event) => {

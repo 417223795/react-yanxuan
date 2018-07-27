@@ -25,6 +25,7 @@ class App extends Component {
           <Route path='/login' component={Login}/>
           <Route path='/list' component={List}/>
           <Route path='/phone' component={Phone}/>
+          <Route path='/main' component={Main}/>
           <Route component={Main}/>
         </Switch>
         <FooterGuide/>

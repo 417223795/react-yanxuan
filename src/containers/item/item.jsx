@@ -45,7 +45,7 @@ class Item extends Component {
           </div>
         </div>
 
-        <div className="content">
+        <div className="item_content">
 
           <div className="content-left">
             <ul ref="content">

@@ -12,7 +12,7 @@ class FooterGuide extends Component {
 
     console.log(this.props.location.pathname)
 
-    if (path==='/login'){
+    if (path === '/login' || path === '/phone'){
       return ''
     } else {
       return (
