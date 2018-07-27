@@ -1,0 +1,81 @@
+@import "../../assets/less/less";
+.new-goods-wrap{
+  background-color: white;
+  background-image: url("./images/5.png");
+  background-size: cover;
+  width: 100%;
+  height: 260/@rem;
+  margin-bottom: .42667rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .new-goods{
+    width: 240/@rem;
+    height: 126/@rem;
+    div:first-child{
+      font-size: .48rem;
+      color: #8BA0B6;
+      text-align: center;
+    }
+    div:last-child{
+      font-size: .37333rem;
+      background-color: #D8E5F1;
+      text-align: center;
+      height: 56/@rem;
+      margin-top: .31333rem;
+      line-height: .74667rem;
+    }
+  }
+}
+.goods-scroll-wrap{
+  background-color: white;
+  width: 10rem;
+  height: 480/@rem;
+  overflow: hidden;
+  .goods-scroll{
+    float: left;
+    white-space: nowrap;
+    li{
+      display: inline-block;
+      width: 280/@rem;
+      height: 414/@rem;
+      margin-left: .42667rem;
+      img{
+        width: 280/@rem;
+        height: 280/@rem;
+        background-color: #f4f4f4;
+      }
+      div{
+        width: 287/@rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .goods-scroll-title{
+        height: 31/@rem;
+        font-size: .37333rem;
+      }
+      .goods-scroll-content{
+        height: 30/@rem;
+        color: #7f7f7f;
+        font-size: .32rem;
+        margin: .18667rem 0;
+      }
+      .goods-scroll-price{
+        height: 31/@rem;
+        font-size: .37333rem;
+        color: #b4282d;
+      }
+      .look-at-all{
+        width: 280/@rem;
+        height: 280/@rem;
+        margin-right: 0.42667rem;
+        font-size: .37333rem;
+        color: #666;
+        text-align: center;
+        line-height: 300/@rem;
+        border: solid 4px #f4f4f4;
+      }
+    }
+  }
+}

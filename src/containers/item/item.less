@@ -1,0 +1,114 @@
+@import "../../assets/less/less";
+.wrap{
+  width: 100%;
+  height: 100%;
+  .header{
+    z-index: 20;
+    background-color: white;
+    height: 87.98/@rem;
+    padding: 0 .4rem;
+    color: #666;
+    font-size: .37333rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    .bottom-border-1px();
+    .header-inside{
+      width: 690/@rem;
+      height: 56/@rem;
+      background-color: #ededed;
+      margin: auto 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .content{
+    background-color: white;
+    margin-top: 87.98/@rem;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 2.5rem;
+    .clearFix();
+    .content-left{
+      width: 162/@rem;
+      height: 100%;
+      box-sizing: border-box;
+      float: left;
+      color: #333;
+      font-size: .37333rem;
+      .right-border-1px();
+      &>ul{
+        width: 100%;
+        &>li{
+          width: 162/@rem;
+          height: 50/@rem;
+          text-align: center;
+          margin: 50/@rem 0;
+          line-height: 50/@rem;
+          &.on{
+            font-size: 0.5rem;
+            color: #ab2b2b;
+            border-left: 2px solid #ab2b2b;
+          }
+        }
+        &>li:last-child{
+          margin-bottom: 0.5rem;
+        }
+        /*&>li:not(:first-child){
+          margin-top: 50/@rem;
+        }*/
+      }
+    }
+    .content-right-wrap{
+      width: 588/@rem;
+      height: 100%;
+      float: left;
+      padding: .4rem .4rem 0 .4rem;
+      box-sizing: border-box;
+      .content-right{
+        overflow: hidden;
+        .content-right-images{
+          width: 528/@rem;
+          height: 192/@rem;
+        }
+        .content-right-title{
+          width: 528/@rem;
+          height: 108/@rem;
+          text-align: center;
+          line-height: 108/@rem;
+          font-size: .32rem;
+          color: #333;
+        }
+        .content-right-content{
+          width: 100%;
+          box-sizing: border-box;
+          ul{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            /*justify-content: space-between;*/
+            align-content: flex-start;
+            li{
+              width: 144/@rem;
+              height: 216/@rem;
+              img{
+                width: 144/@rem;
+                height: 144/@rem;
+              }
+              .content-right-content-text{
+                text-align: center;
+                font-size: .32rem;
+                color: #333;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

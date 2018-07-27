@@ -1,0 +1,87 @@
+@import "../../assets/less/less";
+.wrap {
+  header {
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    .bottom-border-1px();
+    background-color: #fafafa;
+    height: 87.98/@rem;
+    width: 100%;
+    padding: 0 .21333rem 0 .32rem;
+    box-sizing: border-box;
+    font-size: 0.6rem;
+    font-family: 楷体;
+    text-align: center;
+    line-height: 87.98/@rem;
+    .header-icon {
+      font-size: 0.7rem;
+      display: inline-block;
+    }
+    i:first-child {
+      text-align: left;
+      float: left;
+    }
+    i:not(:first-child) {
+      float: right;
+    }
+    .icon-gouwuche {
+      margin-left: 0.5rem;
+    }
+  }
+  .main-logo{
+    width: 100%;
+    height: 410/@rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 87.98/@rem;
+    img{
+      width: 268/@rem;
+      height: 90/@rem;
+    }
+  }
+  .login{
+    width: 100%;
+    height: 292/@rem;
+    box-sizing: border-box;
+    padding: 0 .53333rem;
+    .phone-login{
+      width: 670/@rem;
+      height: 94/@rem;
+      color: #fff;
+      border: 1px solid #b4282d;
+      background-color: #b4282d;
+      font-size: .37333rem;
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      margin-bottom: 24/@rem;
+      .phone-login-wrap{
+        width: 240/@rem;
+        height: 98/@rem;
+        line-height: 98/@rem;
+      }
+    }
+    .e-mail{
+      width: 670/@rem;
+      height: 94/@rem;
+      color: #b4282d;
+      border: 1px solid #b4282d;
+      font-size: .37333rem;
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      .e-mail-wrap{
+        width: 240/@rem;
+        height: 98/@rem;
+        line-height: 98/@rem;
+      }
+    }
+    .phone-register{
+      font-size: .37333rem;
+      text-align: center;
+      line-height: 98/@rem;
+    }
+  }
+}

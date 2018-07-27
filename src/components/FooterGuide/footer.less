@@ -1,0 +1,36 @@
+@import "../../assets/less/less";
+.footer{
+  z-index: 100;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  font-size: 0.32rem;
+  height: 1.306rem;
+  bottom: 0;
+  display: flex;
+  color: #666;
+  vertical-align:middle;
+  .top-border-1px();
+  .item{
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+    justify-content:center;
+    &.on{
+      color: #b4282d;
+    }
+    .iconfont{
+      width: 0.5333rem;
+      height: 0.5333rem;
+      margin: 0 auto;
+      background-repeat: no-repeat;
+      background-size: .53333rem 6.53333rem;
+      font-size: 0.6rem;
+    }
+    span{
+      margin-top: 12/@rem;
+    }
+  }
+}
