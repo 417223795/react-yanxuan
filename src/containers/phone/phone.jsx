@@ -53,7 +53,7 @@ class Phone extends Component {
                 </div>
                 {
                   this.state.phoneNumber.length===11?(
-                    this.state.phoneNumber.match(/^1\d{10}$/)?null:(
+                    this.state.phoneNumber.match(/^(0|86|17951)?(13[0-9]|15[012356789]|16[6]|19[89]]|17[01345678]|18[0-9]|14[579])[0-9]{8}$/)?null:(
                     <div className="enter-phone-number">
                       请输入正确手机号!
                     </div>
